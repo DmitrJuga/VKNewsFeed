@@ -16,10 +16,13 @@
     
     attach.type = dict[@"type"];
     if ([attach.type isEqualToString:@"photo"]) {
-        attach.URLString = dict[@"photo"][@"src_big"];
         attach.title = dict[@"photo"][@"text"];
+        attach.imageURLString = dict[@"photo"][@"src_big"];
+        attach.imageOriginSize = CGSizeMake([dict[@"photo"][@"width"] floatValue], [dict[@"photo"][@"height"] floatValue]);
     } else if ([attach.type isEqualToString:@"video"]) {
         attach.title = dict[@"video"][@"title"];
+        attach.imageURLString = dict[@"video"][@"image_big"];
+        attach.imageOriginSize = CGSizeMake(320, 250);
     } if ([attach.type isEqualToString:@"link"]) {
         attach.title = [NSString stringWithFormat:@"%@\n%@", dict[@"link"][@"title"], dict[@"link"][@"url"]];
     } else if ([attach.type isEqualToString:@"note"]) {

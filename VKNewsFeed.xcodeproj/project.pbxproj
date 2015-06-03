@@ -14,7 +14,6 @@
 		1DA8F7C11B1C15BE00E89D94 /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8F7C01B1C15BE00E89D94 /* Attachment.m */; };
 		1DA8F7C41B1C242300E89D94 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8F7C31B1C242300E89D94 /* TextTableViewCell.m */; };
 		1DA8F7C71B1C325500E89D94 /* AttachTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8F7C61B1C325500E89D94 /* AttachTableViewCell.m */; };
-		1DA8F7CA1B1C5F2000E89D94 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8F7C91B1C5F2000E89D94 /* PhotoTableViewCell.m */; };
 		1DF7C92C1B16504F00529494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF7C92B1B16504F00529494 /* main.m */; };
 		1DF7C92F1B16504F00529494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF7C92E1B16504F00529494 /* AppDelegate.m */; };
 		1DF7C9321B16504F00529494 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF7C9311B16504F00529494 /* SearchViewController.m */; };
@@ -39,8 +38,6 @@
 		1DA8F7C31B1C242300E89D94 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
 		1DA8F7C51B1C325500E89D94 /* AttachTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachTableViewCell.h; sourceTree = "<group>"; };
 		1DA8F7C61B1C325500E89D94 /* AttachTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachTableViewCell.m; sourceTree = "<group>"; };
-		1DA8F7C81B1C5F2000E89D94 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
-		1DA8F7C91B1C5F2000E89D94 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
 		1DF7C9261B16504F00529494 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF7C92A1B16504F00529494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF7C92B1B16504F00529494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,8 +112,6 @@
 			children = (
 				1DA8F7C21B1C242300E89D94 /* TextTableViewCell.h */,
 				1DA8F7C31B1C242300E89D94 /* TextTableViewCell.m */,
-				1DA8F7C81B1C5F2000E89D94 /* PhotoTableViewCell.h */,
-				1DA8F7C91B1C5F2000E89D94 /* PhotoTableViewCell.m */,
 				1DA8F7C51B1C325500E89D94 /* AttachTableViewCell.h */,
 				1DA8F7C61B1C325500E89D94 /* AttachTableViewCell.m */,
 			);
@@ -155,7 +150,6 @@
 				1DF7C9361B16504F00529494 /* Images.xcassets */,
 				1DF7C9291B16504F00529494 /* Supporting Files */,
 			);
-			name = VKNewsFeed;
 			path = VKNewsFeed;
 			sourceTree = "<group>";
 		};
@@ -294,7 +288,6 @@
 				1DA8F7C11B1C15BE00E89D94 /* Attachment.m in Sources */,
 				1DF7C9321B16504F00529494 /* SearchViewController.m in Sources */,
 				1DF7C92F1B16504F00529494 /* AppDelegate.m in Sources */,
-				1DA8F7CA1B1C5F2000E89D94 /* PhotoTableViewCell.m in Sources */,
 				1DA8F7C41B1C242300E89D94 /* TextTableViewCell.m in Sources */,
 				1DF7C92C1B16504F00529494 /* main.m in Sources */,
 				1DA8F7B91B1BDB0100E89D94 /* DetailsViewController.m in Sources */,

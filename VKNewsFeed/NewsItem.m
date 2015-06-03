@@ -27,7 +27,7 @@
     formatter.dateFormat = DATETIME_FORMAT;
     item.formatedDate = [formatter stringFromDate:item.date];
     item.text = [dict[@"text"] stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
-    //item.text = (item.text.length > 4096) ? [item.text substringToIndex:4096] : item.text;
+    item.text = (item.text.length > 8192) ? [item.text substringToIndex:8192] : item.text;
     
     // attachment
     NSDictionary *attach = dict[@"attachment"];

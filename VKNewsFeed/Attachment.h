@@ -11,7 +11,8 @@
 @interface Attachment : NSObject
 
 @property (strong, nonatomic) NSString *type;
-@property (strong, nonatomic) NSString *URLString;
+@property (strong, nonatomic) NSString *imageURLString;
+@property (assign, nonatomic) CGSize imageOriginSize;
 @property (strong, nonatomic) NSString *title;
 
 + (instancetype)objectFromDictionary:(NSDictionary *)dict;
