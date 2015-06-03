@@ -228,54 +228,35 @@
                                     </variation>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="redraw" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" rowHeight="50" id="IhN-vL-Qba" customClass="TextTableViewCell">
+                                    <tableViewCell contentMode="redraw" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" rowHeight="34" id="IhN-vL-Qba" customClass="TextTableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IhN-vL-Qba" id="8ka-CC-YGf">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKQ-z9-bfm">
-                                                    <rect key="frame" x="8" y="8" width="304" height="34"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="304" id="SVx-Mw-cU1"/>
-                                                        <constraint firstAttribute="width" constant="304" id="VJr-zi-mc7"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="xN8-y7-gD7"/>
-                                                        <constraint firstAttribute="width" constant="304" id="zeB-4b-pXg"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="SVx-Mw-cU1"/>
-                                                            <exclude reference="VJr-zi-mc7"/>
-                                                            <exclude reference="xN8-y7-gD7"/>
-                                                            <exclude reference="zeB-4b-pXg"/>
-                                                        </mask>
-                                                    </variation>
-                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-Mq-6JD">
+                                                    <rect key="frame" x="8" y="0.0" width="304" height="34"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="text">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gKQ-z9-bfm" firstAttribute="leading" secondItem="8ka-CC-YGf" secondAttribute="leadingMargin" id="CeY-xt-X0v"/>
-                                                <constraint firstItem="gKQ-z9-bfm" firstAttribute="topMargin" secondItem="8ka-CC-YGf" secondAttribute="topMargin" id="FxG-4C-CDR"/>
-                                                <constraint firstItem="gKQ-z9-bfm" firstAttribute="top" secondItem="8ka-CC-YGf" secondAttribute="topMargin" id="Op3-wL-Jmc"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="gKQ-z9-bfm" secondAttribute="bottom" constant="8" id="T3o-7e-cYc"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="gKQ-z9-bfm" secondAttribute="bottom" id="ZXq-Rm-gAp"/>
-                                                <constraint firstItem="gKQ-z9-bfm" firstAttribute="trailing" secondItem="8ka-CC-YGf" secondAttribute="trailingMargin" id="hdF-MI-0wB"/>
-                                                <constraint firstItem="gKQ-z9-bfm" firstAttribute="bottom" secondItem="8ka-CC-YGf" secondAttribute="bottomMargin" id="iu2-1b-EUX"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="gKQ-z9-bfm" secondAttribute="bottom" constant="8" id="jf0-rU-c3j"/>
-                                                <constraint firstItem="gKQ-z9-bfm" firstAttribute="top" secondItem="8ka-CC-YGf" secondAttribute="topMargin" id="pku-3L-YPk"/>
+                                                <constraint firstItem="N9P-Mq-6JD" firstAttribute="trailing" secondItem="8ka-CC-YGf" secondAttribute="trailingMargin" id="PJr-B0-gk4"/>
+                                                <constraint firstItem="N9P-Mq-6JD" firstAttribute="leading" secondItem="8ka-CC-YGf" secondAttribute="leadingMargin" id="QyT-y4-ICS"/>
+                                                <constraint firstItem="N9P-Mq-6JD" firstAttribute="bottom" secondItem="8ka-CC-YGf" secondAttribute="bottomMargin" constant="8" id="VNL-uu-LAb"/>
+                                                <constraint firstItem="N9P-Mq-6JD" firstAttribute="top" secondItem="8ka-CC-YGf" secondAttribute="topMargin" constant="-8" id="qUt-wg-GWl"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="FxG-4C-CDR"/>
-                                                    <exclude reference="T3o-7e-cYc"/>
-                                                    <exclude reference="ZXq-Rm-gAp"/>
-                                                    <exclude reference="jf0-rU-c3j"/>
-                                                    <exclude reference="pku-3L-YPk"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="text" destination="gKQ-z9-bfm" id="HjC-kU-Uos"/>
+                                            <outlet property="text" destination="N9P-Mq-6JD" id="SKa-86-elB"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="65" id="n7n-28-0o3" customClass="PhotoTableViewCell">

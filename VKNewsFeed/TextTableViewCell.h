@@ -10,6 +10,6 @@
 
 @interface TextTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *text;
+@property (weak, nonatomic) IBOutlet UITextView *text;
 
 @end
