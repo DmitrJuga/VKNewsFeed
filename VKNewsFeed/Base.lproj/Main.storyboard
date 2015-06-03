@@ -20,7 +20,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fiW-LU-LsT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" text="Программирование iOS" placeholder="Поисковый запрос" id="8XR-NQ-fdb">
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Поисковый запрос" id="8XR-NQ-fdb">
                                     <rect key="frame" x="0.0" y="31" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.27843137254901962" green="0.40000000000000002" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
