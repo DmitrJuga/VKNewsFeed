@@ -65,6 +65,7 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
+
 #pragma mark UISearchBarDelegate
 
 // нажатие кнопки Найти
