@@ -146,7 +146,7 @@
 }
 
 
-#pragma  mark Navigation
+#pragma mark Navigation
 
 // передаём параметры в DetailsViewController
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
