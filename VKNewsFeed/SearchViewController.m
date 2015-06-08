@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.arrayResults = [[NSMutableArray alloc] init];
+    self.arrayResults = [NSMutableArray array];
     self.manager = [VKAPIManager managerWithDelegate:self];
     
     self.activityBar.hidden = YES;
@@ -108,24 +108,25 @@
 #pragma mark VKAPIManagerDelegate
 
 // получен результат
--(void)manager:(VKAPIManager *)manager didSuccseedNewsSearchWithData:(NSArray *)data {
+-(void)manager:(VKAPIManager *)manager didSucceedSearchWithData:(NSArray *)data {
     self.activityBar.hidden = YES;
-    
+  
+    // ничего не найдено - возвращаемся в строку поиска
     if (!data || data.count == 0) {
-        // ничего не найдено - возвращаемся в строку поиска
         [self.searchBar becomeFirstResponder];
-    } else {
-         // загружаем результат в tableView
-        [self.arrayResults addObjectsFromArray:data];
-        [self.tableView reloadData];
-        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
-                              atScrollPosition:UITableViewScrollPositionTop
-                                      animated:YES];
+        return;
     }
+
+    // загружаем результат в tableView
+    [self.arrayResults addObjectsFromArray:data];
+    [self.tableView reloadData];
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
+                          atScrollPosition:UITableViewScrollPositionTop
+                                  animated:YES];
 }
 
 // получена ошибка
--(void)manager:(VKAPIManager *)manager didFailedNewsSearchWithError:(NSError *)error {
+-(void)manager:(VKAPIManager *)manager didFailedSearchWithError:(NSError *)error {
     self.activityBar.hidden = YES;
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Ошибка"
                                                    message:error.localizedDescription

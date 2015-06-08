@@ -8,7 +8,6 @@
 
 #import "AFNetworking/AFNetworking.h"
 #import "UIKit+AFNetworking.h"
-
 #import "VKAPIManager.h"
 #import "NewsItem.h"
 
@@ -28,7 +27,7 @@
     self = [super init];
     if (self) {
         NSURL *URL = [NSURL URLWithString:SERVER_URL];
-        self.manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:URL];
+        _manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:URL];
         [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     }
     return self;
@@ -55,14 +54,14 @@
                               [result addObject:[NewsItem objectFromDictionary:val]];
                           }
                       }
-                      [self.delegate manager:self didSuccseedNewsSearchWithData:result];
+                      [self.delegate manager:self didSucceedSearchWithData:result];
                   } else {
-                      [self.delegate manager:self didSuccseedNewsSearchWithData:nil];
+                      [self.delegate manager:self didSucceedSearchWithData:nil];
                   }
               }
               failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                   if ([self.delegate respondsToSelector:@selector(manager:didFailedNewsSearchWithError:)]) {
-                      [self.delegate manager:self didFailedNewsSearchWithError:error];
+                   if ([self.delegate respondsToSelector:@selector(manager:didFailedSearchWithError:)]) {
+                      [self.delegate manager:self didFailedSearchWithError:error];
                   } else {
                       NSLog(@"Error: %@", error);
                   }

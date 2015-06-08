@@ -24,7 +24,7 @@
 @protocol VKAPIManagerDelegate <NSObject>
 
 @optional
-- (void)manager:(VKAPIManager *)manager didSuccseedNewsSearchWithData:(NSArray *)data;
-- (void)manager:(VKAPIManager *)manager didFailedNewsSearchWithError:(NSError *)error;
+- (void)manager:(VKAPIManager *)manager didSucceedSearchWithData:(NSArray *)data;
+- (void)manager:(VKAPIManager *)manager didFailedSearchWithError:(NSError *)error;
 
 @end

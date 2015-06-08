@@ -20,7 +20,6 @@
 		1DF7C9351B16504F00529494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF7C9331B16504F00529494 /* Main.storyboard */; };
 		1DF7C9371B16504F00529494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF7C9361B16504F00529494 /* Images.xcassets */; };
 		1DF7C93A1B16504F00529494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF7C9381B16504F00529494 /* LaunchScreen.xib */; };
-		AA393352205994C723E87733 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974937BFEDF7D0FA292DE04 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA393352205994C723E87733 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
