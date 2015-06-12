@@ -40,7 +40,7 @@
 - Custom `UINavigationBar` appearance tint colors.
 
 **Extra:**
-- AppIcon (image from open web sources);
+- AppIcon (image from free web source).
 
 
 ## More Screenshots
