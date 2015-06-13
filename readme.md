@@ -27,12 +27,12 @@
 - Calling VK API `newsfeed.search` method;
 - Sending `extended` parameter to return search result with additional information about the user or community that placed the post;
 - Using my own API-managing class `VKAPIManager` with delegate and convenience init;
-- Data model has two classes (`News` and `Attachemnt`) with json-responce mapping methods.
+- Data model has two classes (`News` and `Attachemnt`) with json mapping methods.
 
 **UIKit framework usage:**
 - Using 2 `UIViewController`s with Segue transition + `UINavigationController`;
 - `UITableView`s with custom and autosizing cells;
-- Different types of custom cells in one TableView;
+- Different types of custom cells on one TableView;
 - `UITableViewAutomaticDimension` parameter for set dynamic cell height based on content size;
 - `UISearchBar` as TableView header view;
 - Custom screen-blocking activity indicator;
