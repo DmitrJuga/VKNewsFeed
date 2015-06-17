@@ -1,4 +1,4 @@
-# ![VKNewsFeed](https://github.com/DmitrJuga/VKNewsFeed/blob/master/VKNewsFeed/Images.xcassets/AppIcon.appiconset/vkdog-29@2x.png)      VK News Feed
+# ![](https://github.com/DmitrJuga/VKNewsFeed/blob/master/VKNewsFeed/Images.xcassets/AppIcon.appiconset/vkdog-29@2x.png)  VK News Feed
 
 **"VK News Feed"** - простое приложение для поиска и просмотра новостей (записей на стенах) в социальной сети [ВКонтакте](http://vk.com/). Учебный (тренировочный) проект на **Objective-C** c использованием **AFNetworking** и работой с [API VK](http://vk.com/dev/methods).
 
