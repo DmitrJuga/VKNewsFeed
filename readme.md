@@ -15,32 +15,32 @@
 - Другие виды вложений, кроме *фото*, (например, *видео* или *аудио*) также отображаются, но не функциональны (не воспроизводятся, не открываются) и сопровождаются сообщением *"неподдерживаемый контент"*.
 
 
-## Technical Information
+## Technical Details
 
-**Networking**
-- Using **AFNetworking** external framework (installed with **CocoaPods** dependency manager);
-- `AFHTTPRequestOperationManager` for HTTP requests creating and response serialization;
-- `AFNetworkActivityIndicatorManager` for automatically displaying network activity indicator;
+**Networking:**
+- Using **AFNetworking** external framework (installed with **CocoaPods** dependency manager).
+- `AFHTTPRequestOperationManager` for HTTP requests creating and response serialization.
+- `AFNetworkActivityIndicatorManager` for automatically displaying network activity indicator.
 - `UIImageView+AFNetworking` category for asynchronously downloading and caching images.
 
 **VK API usage**:
-- Calling VK API `newsfeed.search` method;
-- Sending `extended` parameter to return search result with additional information about the user or community that placed the post;
-- Using my own API-managing class `VKAPIManager` with delegate and convenience init;
+- Calling VK API `newsfeed.search` method.
+- Sending `extended` parameter to return search result with additional information about the user or community that placed the post.
+- Using my own API-managing class `VKAPIManager` with delegate and convenience init.
 - Data model has two classes (`News` and `Attachemnt`) with json mapping methods.
 
 **UIKit framework usage:**
-- Using 2 `UIViewController`s with Segue transition + `UINavigationController`;
-- `UITableView`s with custom and autosizing cells;
-- Different types of custom cells on one TableView;
-- `UITableViewAutomaticDimension` parameter for set dynamic cell height based on content size;
-- `UISearchBar` as TableView header view;
-- Custom screen-blocking activity indicator;
-- Auto Layout (Storyboard constraints);
+- Using 2 `UIViewController`s with Segue transition + `UINavigationController`.
+- `UITableView`s with custom and autosizing cells.
+- Different types of custom cells on one TableView.
+- `UITableViewAutomaticDimension` parameter for set dynamic cell height based on content size.
+- `UISearchBar` as TableView header view.
+- Custom screen-blocking activity indicator.
+- Auto Layout (Storyboard constraints).
 - Custom `UINavigationBar` appearance tint colors.
 
 **Extra:**
-- AppIcon (image from free web source).
+- App Icon (image from free web source).
 
 
 ## More Screenshots
@@ -53,7 +53,7 @@
 
 ## Основа проекта
 
-Проект создан на основе моей домашней работы к урокам 7-8 по курсу **"Objective C. Уровень 2"** в [НОЧУ ДО «Школа программирования» (http://geekbrains.ru)](http://geekbrains.ru/).   
+Проект создан на основе моей домашней работы к урокам 7-8 по курсу **"Objective C. Уровень 2"** в НОЧУ ДО «Школа программирования» ([http://geekbrains.ru](http://geekbrains.ru/users/38648)).   
 Темы, рассмотренные на данных уроках: работа с JSON, работа с сетью, работа с серверным API на примере API соц.сети VK, использование CocoaPods на примере AFNetworking, использование AFNetworking для упрощения сетевых задач.
 
 ---
